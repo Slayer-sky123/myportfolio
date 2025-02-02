@@ -1,15 +1,43 @@
 @import "tailwindcss";
 
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'custom_font';
 }
 
+body {
+    color: #b7ab98;
+    background: black;
+}
 
+/* lighter font */
 @font-face {
     font-family: 'custom_font';
+    src: url(../fonts/AVGARDN_2.TTF);
+}
+
+@font-face {
+    font-family: 'custom_font_bold';
     src: url(../fonts/AVGARDD_2.TTF);
+}
+
+.custom_font_bold {
+    font-family: 'custom_font_bold';
+}
+
+/* Hide scrollbar but keep scrolling */
+html,
+body {
+    overflow-y: scroll;
+    /* Ensures scrolling is enabled */
+    scrollbar-width: none;
+    /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none;
+    /* Hides scrollbar in IE/Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+html::-webkit-scrollbar {
+    display: none;
 }
