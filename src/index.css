@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'custom_font';
+}
+
+
+@font-face {
+    font-family: 'custom_font';
+    src: url(../fonts/AVGARDD_2.TTF);
+}
